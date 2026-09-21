@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7 50%, #c9b6ff);
+  color: #3a2a4a;
+  overflow: hidden; /* the No button must never cause scrolling */
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.page {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 24px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.emoji {
+  font-size: 64px;
+  line-height: 1;
+}
+
+h1 {
+  margin: 16px 0 8px;
+  font-size: clamp(1.4rem, 6vw, 1.9rem);
+  line-height: 1.25;
+}
+
+p {
+  margin: 8px 0 16px;
+  font-size: 1.1rem;
+}
+
+.progress {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #8a6fa8;
+  margin-bottom: 12px;
+}
+
+.input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  font-size: 1.1rem; /* 16px+ stops iOS zooming on focus */
+  border: 2px solid #d8c7ea;
+  border-radius: 14px;
+  text-align: center;
+  outline: none;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.input:focus {
+  border-color: #a06cd5;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  min-height: 72px;
+  margin-top: 24px;
+}
+
+.btn {
+  font: inherit;
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.btn.yes {
+  background: #34c759;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(52, 199, 89, 0.45);
+}
+
+.btn.yes:disabled {
+  background: #b7dcc0;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.btn.yes:active:not(:disabled) {
+  filter: brightness(0.92);
+}
+
+.btn.no {
+  background: #ff5a5f;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(255, 90, 95, 0.4);
+  transition: left 0.25s ease, top 0.25s ease;
+}
+
+.taunt {
+  min-height: 1.5em;
+  margin: 16px 0 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #b0405a;
+}
