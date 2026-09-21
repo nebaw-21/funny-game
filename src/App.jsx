@@ -4,11 +4,11 @@ import QuestionPage from './QuestionPage.jsx'
 
 // {name} is replaced with the player's name.
 const QUESTIONS = [
-  { emoji: '👋', text: 'Hey {name}! Are you having a great day?' },
-  { emoji: '🍕', text: '{name}, do you like pizza?' },
-  { emoji: '😎', text: 'Be honest {name}... are you awesome?' },
-  { emoji: '🎉', text: 'Is this the best game you have ever played?' },
-  { emoji: '💖', text: 'Last one, {name}! Will you keep smiling?' },
+  { emoji: '👋', text: 'Hey {name}! ትወጂኛለሽ ፣ አቶጂኝም?' },
+  { emoji: '🍕', text: '{name}, እሩም እንያዝ ፣ አንያዝ?' },
+  { emoji: '😎', text: 'በኮንዶም ይሁን ፣ በመላጣዉ?' },
+  { emoji: '🎉', text: 'ትሰጪኛለሽ ፣ አሰጪኝም?' },
+  { emoji: '💖', text: 'እንደግመዋለ፣ አንደግመዉም?' },
 ]
 
 export default function App() {
